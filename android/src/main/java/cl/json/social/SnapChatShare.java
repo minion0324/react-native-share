@@ -15,7 +15,6 @@ import com.facebook.react.bridge.ReadableMap;
 public class SnapChatShare extends SingleShareIntent {
 
     private static final String PACKAGE = "com.snapchat.android";
-    private static final String CLASS = "com.snapchat.android.LandingPageActivity";
     private static final String PLAY_STORE_LINK = "market://details?id=com.snapchat.android";
     
     public SnapChatShare(ReactApplicationContext reactContext) {
@@ -33,9 +32,6 @@ public class SnapChatShare extends SingleShareIntent {
     protected String getPackage() {
         return PACKAGE;
     }
-
-    @Override
-    protected String getComponentClass() { return CLASS; }
 
     @Override
     protected String getDefaultWebLink() {
