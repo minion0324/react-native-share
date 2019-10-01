@@ -46,7 +46,7 @@
         }
 
 
-        UIViewController *ctrl = RCTPresentedViewController();
+        UIViewController *ctrl = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
         [ctrl presentViewController:composeController animated:YES completion:Nil];
         successCallback(@[]);
       } else {
